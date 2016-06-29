@@ -28,3 +28,8 @@ test.skip('comment', (t) => {
   const html = fs.readFileSync(path.join(fixtures, 'comments.html'), 'utf8')
   console.log(parse(html))
 })
+
+test.skip('id collision', (t) => {
+  const html = fs.readFileSync(path.join(fixtures, 'id_collision.html'), 'utf8')
+  console.log(parse(html))
+})
