@@ -39,3 +39,7 @@ test.skip('divless id', (t) => {
   console.log(parse(html))
 })
 
+test.skip('divless class', (t) => {
+  const html = fs.readFileSync(path.join(fixtures, 'divless_class.html'), 'utf8')
+  console.log(parse(html))
+})
