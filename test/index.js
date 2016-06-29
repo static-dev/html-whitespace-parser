@@ -33,3 +33,9 @@ test.skip('id collision', (t) => {
   const html = fs.readFileSync(path.join(fixtures, 'id_collision.html'), 'utf8')
   console.log(parse(html))
 })
+
+test.skip('divless id', (t) => {
+  const html = fs.readFileSync(path.join(fixtures, 'divless_id.html'), 'utf8')
+  console.log(parse(html))
+})
+
