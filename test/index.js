@@ -39,3 +39,18 @@ test.skip('comment', (t) => {
   const html = fs.readFileSync(path.join(fixtures, 'comments.html'), 'utf8')
   console.log(parser(html))
 })
+
+test.skip('id collision', (t) => {
+  const html = fs.readFileSync(path.join(fixtures, 'id_collision.html'), 'utf8')
+  console.log(parse(html))
+})
+
+test.skip('divless id', (t) => {
+  const html = fs.readFileSync(path.join(fixtures, 'divless_id.html'), 'utf8')
+  console.log(parse(html))
+})
+
+test.skip('divless class', (t) => {
+  const html = fs.readFileSync(path.join(fixtures, 'divless_class.html'), 'utf8')
+  console.log(parse(html))
+})
